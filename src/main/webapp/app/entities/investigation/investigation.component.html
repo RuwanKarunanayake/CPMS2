@@ -17,19 +17,19 @@
             <thead>
             <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="reset.bind(this)">
             <th jhiSortBy="id"><span>ID</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="fBC"><span>F BC</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="bV"><span>B V</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="sE"><span>S E</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="sCV"><span>S CV</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="lFT"><span>L FT</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="fBC"><span>FBC</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="bV"><span>BV</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="sE"><span>SE</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="sCV"><span>SCV</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="lFT"><span>LFT</span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="lipidProfile"><span>Lipid Profile</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="fBs"><span>F Bs</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="pPBS"><span>P PBS</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="bloodTestCompleted"><span>Blood Test Completed</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="uFR"><span>U FR</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="urineTestCompleted"><span>Urine Test Completed</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="fBs"><span>FBS</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="pPBS"><span>PPBS</span> <span class="fa fa-sort"></span></th>
+                <th jhiSortBy="bloodTestCompleted"><span><strong>Blood Test Completed</strong></span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="uFR"><span>UFR</span> <span class="fa fa-sort"></span></th>
+                <th jhiSortBy="urineTestCompleted"><span><strong>Urine Test Completed</strong></span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="culture"><span>Culture</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="cultureTestCompleted"><span>Culture Test Completed</span> <span class="fa fa-sort"></span></th>
+                <th jhiSortBy="cultureTestCompleted"><span><strong>Culture Test Completed</strong></span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="other"><span>Other</span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="recording.recNo"><span>Recording</span> <span class="fa fa-sort"></span></th>
             <th></th>
@@ -46,11 +46,11 @@
                 <td>{{investigation.lipidProfile}}</td>
                 <td>{{investigation.fBs}}</td>
                 <td>{{investigation.pPBS}}</td>
-                <td>{{investigation.bloodTestCompleted}}</td>
+                <td><strong style="color:DeepSkyBlue">{{investigation.bloodTestCompleted}}</strong></td>
                 <td>{{investigation.uFR}}</td>
-                <td>{{investigation.urineTestCompleted}}</td>
+                <td><strong style="color:DeepSkyBlue">{{investigation.urineTestCompleted}}</strong></td>
                 <td>{{investigation.culture}}</td>
-                <td>{{investigation.cultureTestCompleted}}</td>
+                <td><strong style="color:DeepSkyBlue">{{investigation.cultureTestCompleted}}</strong></td>
                 <td>{{investigation.other}}</td>
                 <td>
                     <div *ngIf="investigation.recording">

@@ -12,9 +12,8 @@ import java.time.ZonedDateTime;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * A DTO representing a user, with his authorities.
- */
+//DTO for a user, with his authorities.
+
 public class UserDTO {
 
     private Long id;
@@ -52,7 +51,7 @@ public class UserDTO {
     private Set<String> authorities;
 
     public UserDTO() {
-        // Empty constructor needed for MapStruct.
+
     }
 
     public UserDTO(User user) {

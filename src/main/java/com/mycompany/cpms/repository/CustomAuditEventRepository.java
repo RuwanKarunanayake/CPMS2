@@ -16,9 +16,7 @@ import java.time.ZoneId;
 import java.util.Date;
 import java.util.List;
 
-/**
- * An implementation of Spring Boot's AuditEventRepository.
- */
+
 @Repository
 public class CustomAuditEventRepository implements AuditEventRepository {
 

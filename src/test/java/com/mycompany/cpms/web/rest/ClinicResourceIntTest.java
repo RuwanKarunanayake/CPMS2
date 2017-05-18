@@ -117,7 +117,7 @@ public class ClinicResourceIntTest {
         // Create the Clinic with an existing ID
         clinic.setId(1L);
 
-        // An entity with an existing ID cannot be created, so this API call must fail
+        // An entity with an existing ID cannot be created, so this call sholud fail
         restClinicMockMvc.perform(post("/api/clinics")
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
             .content(TestUtil.convertObjectToJsonBytes(clinic)))

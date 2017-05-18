@@ -1,8 +1,7 @@
 package com.mycompany.cpms.security;
 
-/**
- * Constants for Spring Security authorities.
- */
+//Constants for Spring Security authorities constanats.
+
 public final class AuthoritiesConstants {
 
     public static final String ADMIN = "ROLE_ADMIN";

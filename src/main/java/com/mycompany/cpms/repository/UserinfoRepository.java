@@ -9,9 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-/**
- * Spring Data JPA repository for the Userinfo entity.
- */
+
 @SuppressWarnings("unused")
 public interface UserinfoRepository extends JpaRepository<Userinfo,Long> {
 
